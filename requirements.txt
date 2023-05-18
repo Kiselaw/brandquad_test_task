@@ -1,0 +1,3 @@
+html2text==2020.1.16
+rotating-free-proxies==0.1.2
+Scrapy==2.9.0
