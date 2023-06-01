@@ -13,7 +13,7 @@ class AptekaSpider(scrapy.Spider):
         self.categories = categories.split(",")
 
     def start_requests(self):
-        limit = 30 # Кол-во объекто, котоыре необходимо спарсить
+        limit = 30 # Кол-во объектов, которые необходимо спарсить
         city = 92 # ID города для передачи в cookies
         cookies = {"city": city}
         corrected_categories = [
@@ -24,7 +24,6 @@ class AptekaSpider(scrapy.Spider):
             f"/search?sort=popindex&slug={category}&limit={limit}"
             for category in corrected_categories
         ]
-
         for url in urls:
             yield scrapy.Request(url=url, cookies=cookies, callback=self.parse)
 
