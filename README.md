@@ -1,6 +1,6 @@
-# Brandquad test task
+# Тестовое задание в Brandquad
 
-Тестовое задание на вакансию Junior Python Developer (Scrapy).
+Ссылка на задание - https://drive.google.com/file/d/1dLROMr6IwwL1XCy7IKvA4MK1NbsxuQK6/view?usp=sharing.
 
 ## Запуск и проверка
 
